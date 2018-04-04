@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description>A project dedicated on providing automated tests for the WG-Gesucht Site</description>
+   <name>WG-Gesucht-Site</name>
+   <tag></tag>
+   <UUID>37eb71ea-633b-465d-93eb-40a18dd11dc9</UUID>
+   <pageLoadTimeout>30</pageLoadTimeout>
+</Project>
