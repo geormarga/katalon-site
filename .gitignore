@@ -1,4 +1,6 @@
-bin/
+.project
+.classpath
 
-Libs/
-Reports
+bin/*
+Libs/*
+Reports/*
