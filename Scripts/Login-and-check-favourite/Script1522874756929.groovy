@@ -24,30 +24,32 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.wg-gesucht.de/en/#')
 
+// Click on the login button.
 WebUI.waitForElementPresent(findTestObject('Login-Button'), 10)
-
 WebUI.click(findTestObject('Login-Button'))
 
-WebUI.delay(1)
-
-WebUI.waitForElementPresent(findTestObject('input_login_email_username'), 20)
-WebUI.waitForElementClickable(findTestObject('input_login_email_username'), 20)
+// Fill username field.
+WebUI.waitForElementPresent(findTestObject('input_login_email_username'), 10)
+WebUI.waitForElementVisible(findTestObject('input_login_email_username'), 10)
+WebUI.waitForElementClickable(findTestObject('input_login_email_username'), 10)
 WebUI.setText(findTestObject('input_login_email_username'), 'george.m@weblicity.com')
 
+// Fill password field.
 WebUI.waitForElementPresent(findTestObject('input_login_password'), 10)
 WebUI.waitForElementClickable(findTestObject('input_login_password'), 10)
 WebUI.setText(findTestObject('input_login_password'), '123456aA!')
 
+// Click on the form login button.
 WebUI.waitForElementPresent(findTestObject('Form-Login-Button'), 10)
 WebUI.waitForElementClickable(findTestObject('Form-Login-Button'), 10)
 WebUI.click(findTestObject('Form-Login-Button'))
 
-
+// Mouseover action over the username.
 WebUI.waitForElementPresent(findTestObject('Test-User-Dropdown-href'), 10)
 WebUI.waitForElementVisible(findTestObject('Test-User-Dropdown-href'), 10)
 WebUI.mouseOver(findTestObject('Test-User-Dropdown-href'))
 
-//Click at the favourites list item in the user's dropdown menu.
+// Click at the favourites list item in the user's dropdown menu.
 WebUI.waitForElementPresent(findTestObject('Favourites-List-Item'), 10)
 WebUI.waitForElementVisible(findTestObject('Favourites-List-Item'), 10)
 WebUI.waitForElementClickable(findTestObject('Favourites-List-Item'), 10)
@@ -58,13 +60,13 @@ WebUI.waitForElementPresent(findTestObject('Favourite'), 10)
 WebUI.waitForElementClickable(findTestObject('Favourite'), 10)
 WebUI.click(findTestObject('Favourite'))
 
-//Set some text in the note form's textarea.
+// Set some text in the note form's textarea.
 WebUI.waitForElementPresent(findTestObject('Note-Textarea'), 10)
 WebUI.waitForElementClickable(findTestObject('Note-Textarea'), 10)
 String date = CustomKeywords.'custom.CustomDate.getDate'()
 WebUI.setText(findTestObject('Note-Textarea'), 'This is an auto generated text message. ' + date)
 
-//Click the save note button of the note form.
+// Click the save note button of the note form.
 WebUI.waitForElementPresent(findTestObject('Note-Save-Button'), 10)
 WebUI.waitForElementClickable(findTestObject('Note-Save-Button'), 10)
 WebUI.click(findTestObject('Note-Save-Button'))
