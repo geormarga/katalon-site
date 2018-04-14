@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Login-Form-Button</name>
+   <name>Note-Save-Button</name>
    <tag></tag>
-   <elementGuidId>15f331db-5642-4981-b268-6d258ac171c6</elementGuidId>
+   <elementGuidId>0d45860b-6cfa-4885-9105-5a386f5d6936</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;login_basic&quot;]/div[5]/input</value>
+      <value>//*[@id = &quot;note_form&quot;]//*[@name = &quot;note_save_button&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
