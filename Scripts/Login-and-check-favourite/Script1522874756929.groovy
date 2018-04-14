@@ -28,36 +28,46 @@ WebUI.waitForElementPresent(findTestObject('Login-Button'), 10)
 
 WebUI.click(findTestObject('Login-Button'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Your flat share apartment hous/input_login_email_username'), 10)
+WebUI.delay(1)
 
-WebUI.setText(findTestObject('Page_Your flat share apartment hous/input_login_email_username'), 'george.m@weblicity.com')
+WebUI.waitForElementPresent(findTestObject('input_login_email_username'), 20)
+WebUI.waitForElementClickable(findTestObject('input_login_email_username'), 20)
+WebUI.setText(findTestObject('input_login_email_username'), 'george.m@weblicity.com')
 
-WebUI.waitForElementPresent(findTestObject('Page_Your flat share apartment hous/input_login_password'), 10)
+WebUI.waitForElementPresent(findTestObject('input_login_password'), 10)
+WebUI.waitForElementClickable(findTestObject('input_login_password'), 10)
+WebUI.setText(findTestObject('input_login_password'), '123456aA!')
 
-WebUI.setText(findTestObject('Page_Your flat share apartment hous/input_login_password'), '123456aA!')
-
-WebUI.waitForElementPresent(findTestObject('Login-Button'), 10)
-
-WebUI.click(findTestObject('Login-Button'))
+WebUI.waitForElementPresent(findTestObject('Form-Login-Button'), 10)
+WebUI.waitForElementClickable(findTestObject('Form-Login-Button'), 10)
+WebUI.click(findTestObject('Form-Login-Button'))
 
 
-WebUI.click(findTestObject('Page_Your flat share apartment hous/input_login_form_auto_login'))
+WebUI.waitForElementPresent(findTestObject('Test-User-Dropdown-href'), 10)
+WebUI.waitForElementVisible(findTestObject('Test-User-Dropdown-href'), 10)
+WebUI.mouseOver(findTestObject('Test-User-Dropdown-href'))
 
-WebUI.click(findTestObject('Page_Your flat share apartment hous/input_btn btn-info btn-block'))
+//Click at the favourites list item in the user's dropdown menu.
+WebUI.waitForElementPresent(findTestObject('Favourites-List-Item'), 10)
+WebUI.waitForElementVisible(findTestObject('Favourites-List-Item'), 10)
+WebUI.waitForElementClickable(findTestObject('Favourites-List-Item'), 10)
+WebUI.click(findTestObject('Favourites-List-Item'))
 
-WebUI.click(findTestObject('Page_Your flat share apartment hous/a_Test User'))
+// Click at the first favourite in your favourite list.
+WebUI.waitForElementPresent(findTestObject('Favourite'), 10)
+WebUI.waitForElementClickable(findTestObject('Favourite'), 10)
+WebUI.click(findTestObject('Favourite'))
 
-WebUI.click(findTestObject('Page_WG-Gesucht.de/a_To My Favourites and Contact'))
+//Set some text in the note form's textarea.
+WebUI.waitForElementPresent(findTestObject('Note-Textarea'), 10)
+WebUI.waitForElementClickable(findTestObject('Note-Textarea'), 10)
+String date = CustomKeywords.'custom.CustomDate.getDate'()
+WebUI.setText(findTestObject('Note-Textarea'), 'This is an auto generated text message. ' + date)
 
-WebUI.click(findTestObject('Page_My Favourites on WG-Gesucht.de/div_16m'))
-
-WebUI.click(findTestObject('Page_My Favourites on WG-Gesucht.de/div_16m'))
-
-WebUI.click(findTestObject('Page_My Favourites on WG-Gesucht.de/img_vis img-responsive center-'))
-
-WebUI.setText(findTestObject('Page_WG-Zimmer nahe der FU - WGZimm/textarea_form-control  note_te'), 'This is a generated note! random generated text')
-
-WebUI.click(findTestObject('Page_WG-Zimmer nahe der FU - WGZimm/div_Save'))
+//Click the save note button of the note form.
+WebUI.waitForElementPresent(findTestObject('Note-Save-Button'), 10)
+WebUI.waitForElementClickable(findTestObject('Note-Save-Button'), 10)
+WebUI.click(findTestObject('Note-Save-Button'))
 
 WebUI.closeBrowser()
 
