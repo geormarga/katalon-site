@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//*[@id=&quot;login_submit&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;login_basic&quot;]/div[5]/input</value>
+      <value>//*[@id=&quot;login_submit&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

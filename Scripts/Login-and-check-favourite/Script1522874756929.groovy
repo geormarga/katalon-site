@@ -27,19 +27,19 @@ WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://www.wg-gesucht.de/en/#')
 
 // Click on the login button.
-WebUI.waitForElementPresent(findTestObject('Login-Button'), 10)
-WebUI.click(findTestObject('Login-Button'))
+WebUI.waitForElementPresent(findTestObject('LoginButton'), 10)
+WebUI.click(findTestObject('LoginButton'))
 
 // Fill username field.
-WebUI.waitForElementPresent(findTestObject('input_login_email_username'), 10)
-WebUI.waitForElementVisible(findTestObject('input_login_email_username'), 10)
-WebUI.waitForElementClickable(findTestObject('input_login_email_username'), 10)
-WebUI.setText(findTestObject('input_login_email_username'), 'george.m@weblicity.com')
+WebUI.waitForElementPresent(findTestObject('UsernameTextfield'), 10)
+WebUI.waitForElementVisible(findTestObject('UsernameTextfield'), 10)
+WebUI.waitForElementClickable(findTestObject('UsernameTextfield'), 10)
+WebUI.setText(findTestObject('UsernameTextfield'), 'george.m@weblicity.com')
 
 // Fill password field.
-WebUI.waitForElementPresent(findTestObject('input_login_password'), 10)
-WebUI.waitForElementClickable(findTestObject('input_login_password'), 10)
-WebUI.setText(findTestObject('input_login_password'), '123456aA!')
+WebUI.waitForElementPresent(findTestObject('PasswordTextfield'), 10)
+WebUI.waitForElementClickable(findTestObject('PasswordTextfield'), 10)
+WebUI.setText(findTestObject('PasswordTextfield'), '123456aA!')
 
 // Click on the form login button.
 WebUI.waitForElementPresent(findTestObject('Form-Login-Button'), 10)

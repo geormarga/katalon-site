@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Note-Save-Button</name>
+   <name>PasswordTextfield</name>
    <tag></tag>
-   <elementGuidId>0d45860b-6cfa-4885-9105-5a386f5d6936</elementGuidId>
+   <elementGuidId>ef334567-76d4-4e13-91bf-22cf5ff8a9d9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;note_form&quot;]/div[1]</value>
+         <value>//input[@id = 'login_password' and @type = 'password' and @name = 'login_password' and @placeholder = 'Password']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;note_form&quot;]/div[1]</value>
+      <value>//*[@id=&quot;login_password&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
