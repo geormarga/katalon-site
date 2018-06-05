@@ -22,6 +22,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('https://www.wg-gesucht.de/en/#')
 
 // Click on the login button.
