@@ -18,6 +18,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+
+import org.junit.After
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
@@ -51,13 +53,13 @@ WebUI.waitForElementPresent(findTestObject('Test-User-Dropdown-href'), 10)
 WebUI.waitForElementVisible(findTestObject('Test-User-Dropdown-href'), 10)
 WebUI.mouseOver(findTestObject('Test-User-Dropdown-href'))
 
-// Click at the favourites list item in the user's dropdown menu.
+// Click on the favourites list item in the user's dropdown menu.
 WebUI.waitForElementPresent(findTestObject('Favourites-List-Item'), 10)
 WebUI.waitForElementVisible(findTestObject('Favourites-List-Item'), 10)
 WebUI.waitForElementClickable(findTestObject('Favourites-List-Item'), 10)
 WebUI.click(findTestObject('Favourites-List-Item'))
 
-// Click at the first favourite in your favourite list.
+// Click on the first favourite in your favourite list.
 WebUI.waitForElementPresent(findTestObject('Favourite'), 10)
 WebUI.waitForElementClickable(findTestObject('Favourite'), 10)
 WebUI.click(findTestObject('Favourite'))
@@ -68,7 +70,12 @@ WebUI.waitForElementClickable(findTestObject('Note-Textarea'), 10)
 String date = CustomKeywords.'custom.CustomDate.getDate'()
 WebUI.setText(findTestObject('Note-Textarea'), 'This is an auto generated text message. ' + date)
 
-// Click the save note button of the note form.
+// Click on the cookie confirm button in order to proceed.
+WebUI.waitForElementPresent(findTestObject('CookieConfirmButton'), 10)
+WebUI.waitForElementClickable(findTestObject('CookieConfirmButton'), 10)
+WebUI.click(findTestObject('CookieConfirmButton'))
+
+// Click on the save note button of the note form.
 WebUI.waitForElementPresent(findTestObject('Note-Save-Button'), 10)
 WebUI.waitForElementClickable(findTestObject('Note-Save-Button'), 10)
 WebUI.click(findTestObject('Note-Save-Button'))
