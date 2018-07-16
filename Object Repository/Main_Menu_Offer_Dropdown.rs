@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Login-Button</name>
+   <name>Main_Menu_Offer_Dropdown</name>
    <tag></tag>
-   <elementGuidId>982ffcc0-677d-4e33-9476-69a771e74fac</elementGuidId>
+   <elementGuidId>b08e1805-2b25-4cf0-aa6f-6ab9e1ef595b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;headbar_wrapper&quot;]/div[2]/a[2]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;headbar_wrapper&quot;]/div[2]/a[2]</value>
+      <value>//*[@id=&quot;top_nav_main_menu&quot;]/ul/li[1]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Login-Button</name>
+   <name>Modal_login_form_submit</name>
    <tag></tag>
-   <elementGuidId>982ffcc0-677d-4e33-9476-69a771e74fac</elementGuidId>
+   <elementGuidId>15f331db-5642-4981-b268-6d258ac171c6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;headbar_wrapper&quot;]/div[2]/a[2]</value>
+         <value>//*[@id=&quot;login_submit&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;headbar_wrapper&quot;]/div[2]/a[2]</value>
+      <value>//*[@id=&quot;login_submit&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
