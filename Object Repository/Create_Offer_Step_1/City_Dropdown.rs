@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Dropdown_Value_Rent_Type_Long_Term</name>
+   <name>City_Dropdown</name>
    <tag></tag>
-   <elementGuidId>74bf55ea-f478-4ef1-8414-349e2fc59569</elementGuidId>
+   <elementGuidId>83cbab0a-5e0a-41ed-8b42-104f5d1e6ed9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;mietartDropdown&quot;]/option[2]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;mietartDropdown&quot;]/option[2]</value>
+      <value>//*[@id=&quot;autocompinp&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
