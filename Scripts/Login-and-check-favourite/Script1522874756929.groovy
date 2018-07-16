@@ -20,29 +20,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://www.wg-gesucht.de/en/#')
-
 // Click on the login button.
 WebUI.waitForElementPresent(findTestObject('Login-Button'), 10)
 WebUI.click(findTestObject('Login-Button'))
 
 // Fill username field.
-WebUI.waitForElementPresent(findTestObject('input_login_email_username'), 10)
-WebUI.waitForElementVisible(findTestObject('input_login_email_username'), 10)
-WebUI.waitForElementClickable(findTestObject('input_login_email_username'), 10)
-WebUI.setText(findTestObject('input_login_email_username'), 'george.m@weblicity.com')
+WebUI.waitForElementPresent(findTestObject('Modal_login_email_username'), 10)
+WebUI.waitForElementVisible(findTestObject('Modal_login_email_username'), 10)
+WebUI.waitForElementClickable(findTestObject('Modal_login_email_username'), 10)
+WebUI.setText(findTestObject('Modal_login_email_username'), 'george.m@weblicity.com')
 
 // Fill password field.
-WebUI.waitForElementPresent(findTestObject('input_login_password'), 10)
-WebUI.waitForElementClickable(findTestObject('input_login_password'), 10)
-WebUI.setText(findTestObject('input_login_password'), '123456aA!')
+WebUI.waitForElementPresent(findTestObject('Modal_login_passwordfield'), 10)
+WebUI.waitForElementClickable(findTestObject('Modal_login_passwordfield'), 10)
+WebUI.setText(findTestObject('Modal_login_passwordfield'), '123456aA!')
 
 // Click on the form login button.
-WebUI.waitForElementPresent(findTestObject('Form-Login-Button'), 10)
-WebUI.waitForElementClickable(findTestObject('Form-Login-Button'), 10)
-WebUI.click(findTestObject('Form-Login-Button'))
+WebUI.waitForElementPresent(findTestObject('Modal_login_form_submit'), 10)
+WebUI.waitForElementClickable(findTestObject('Modal_login_form_submit'), 10)
+WebUI.click(findTestObject('Modal_login_form_submit'))
 
 // Mouseover action over the username.
 WebUI.waitForElementPresent(findTestObject('Test-User-Dropdown-href'), 10)
