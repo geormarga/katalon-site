@@ -25,20 +25,20 @@ WebUI.waitForElementPresent(findTestObject('Login-Button'), 10)
 WebUI.click(findTestObject('Login-Button'))
 
 // Fill username field.
-WebUI.waitForElementPresent(findTestObject('Modal_login_email_username'), 10)
-WebUI.waitForElementVisible(findTestObject('Modal_login_email_username'), 10)
-WebUI.waitForElementClickable(findTestObject('Modal_login_email_username'), 10)
-WebUI.setText(findTestObject('Modal_login_email_username'), 'george.m@weblicity.com')
+WebUI.waitForElementPresent(findTestObject('Modal-Login-Email-Username'), 10)
+WebUI.waitForElementVisible(findTestObject('Modal-Login-Email-Username'), 10)
+WebUI.waitForElementClickable(findTestObject('Modal-Login-Email-Username'), 10)
+WebUI.setText(findTestObject('Modal-Login-Email-Username'), 'george.m@weblicity.com')
 
 // Fill password field.
-WebUI.waitForElementPresent(findTestObject('Modal_login_passwordfield'), 10)
-WebUI.waitForElementClickable(findTestObject('Modal_login_passwordfield'), 10)
-WebUI.setText(findTestObject('Modal_login_passwordfield'), '123456aA!')
+WebUI.waitForElementPresent(findTestObject('Modal-Login-Passwordfield'), 10)
+WebUI.waitForElementClickable(findTestObject('Modal-Login-Passwordfield'), 10)
+WebUI.setText(findTestObject('Modal-Login-Passwordfield'), '123456aA!')
 
 // Click on the form login button.
-WebUI.waitForElementPresent(findTestObject('Modal_login_form_submit'), 10)
-WebUI.waitForElementClickable(findTestObject('Modal_login_form_submit'), 10)
-WebUI.click(findTestObject('Modal_login_form_submit'))
+WebUI.waitForElementPresent(findTestObject('Modal-Login-Form-Submit'), 10)
+WebUI.waitForElementClickable(findTestObject('Modal-Login-Form-Submit'), 10)
+WebUI.click(findTestObject('Modal-Login-Form-Submit'))
 
 // Mouseover action over the username.
 WebUI.waitForElementPresent(findTestObject('Test-User-Dropdown-href'), 10)

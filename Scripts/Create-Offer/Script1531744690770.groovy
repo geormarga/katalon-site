@@ -25,48 +25,55 @@ WebUI.waitForElementPresent(findTestObject('Login-Button'), 30)
 WebUI.click(findTestObject('Login-Button'))
 
 // Fill username field.
-WebUI.waitForElementPresent(findTestObject('Modal_login_email_username'), 30)
-WebUI.waitForElementVisible(findTestObject('Modal_login_email_username'), 30)
-WebUI.waitForElementClickable(findTestObject('Modal_login_email_username'), 30)
-WebUI.setText(findTestObject('Modal_login_email_username'), 'george.m@weblicity.com')
+WebUI.waitForElementPresent(findTestObject('Modal-Login-Email-Username'), 30)
+WebUI.waitForElementVisible(findTestObject('Modal-Login-Email-Username'), 30)
+WebUI.waitForElementClickable(findTestObject('Modal-Login-Email-Username'), 30)
+WebUI.setText(findTestObject('Modal-Login-Email-Username'), 'george.m@weblicity.com')
 
 // Fill password field.
-WebUI.waitForElementPresent(findTestObject('Modal_login_passwordfield'), 30)
-WebUI.waitForElementClickable(findTestObject('Modal_login_passwordfield'), 30)
-WebUI.setText(findTestObject('Modal_login_passwordfield'), '123456aA!')
+WebUI.waitForElementPresent(findTestObject('Modal-Login-Passwordfield'), 30)
+WebUI.waitForElementClickable(findTestObject('Modal-Login-Passwordfield'), 30)
+WebUI.setText(findTestObject('Modal-Login-Passwordfield'), '123456aA!')
 
 // Click on the form login button.
-WebUI.waitForElementPresent(findTestObject('Modal_login_form_submit'), 30)
-WebUI.waitForElementClickable(findTestObject('Modal_login_form_submit'), 30)
-WebUI.click(findTestObject('Modal_login_form_submit'))
+WebUI.waitForElementPresent(findTestObject('Modal-Login-Form-Submit'), 30)
+WebUI.waitForElementClickable(findTestObject('Modal-Login-Form-Submit'), 30)
+WebUI.click(findTestObject('Modal-Login-Form-Submit'))
 
 // Mouseover the offer dropdown.
-WebUI.waitForElementPresent(findTestObject('Main_Menu_Offer_Dropdown'), 30)
-WebUI.waitForElementClickable(findTestObject('Main_Menu_Offer_Dropdown'), 30)
-WebUI.mouseOver(findTestObject('Main_Menu_Offer_Dropdown'))
+WebUI.waitForElementPresent(findTestObject('Main-Menu-Offer-Dropdown'), 30)
+WebUI.waitForElementClickable(findTestObject('Main-Menu-Offer-Dropdown'), 30)
+WebUI.mouseOver(findTestObject('Main-Menu-Offer-Dropdown'))
 
-// Click create offer
-WebUI.waitForElementPresent(findTestObject('Main_Menu_Offer_Dropdown_Create_Offer'), 30)
-WebUI.waitForElementVisible(findTestObject('Main_Menu_Offer_Dropdown_Create_Offer'), 30)
-WebUI.waitForElementClickable(findTestObject('Main_Menu_Offer_Dropdown_Create_Offer'), 30)
-WebUI.click(findTestObject('Main_Menu_Offer_Dropdown_Create_Offer'))
+// Click create offer.
+WebUI.waitForElementPresent(findTestObject('Main-Menu-Offer-Dropdown-Create-Offer'), 30)
+WebUI.waitForElementVisible(findTestObject('Main-Menu-Offer-Dropdown-Create-Offer'), 30)
+WebUI.waitForElementClickable(findTestObject('Main-Menu-Offer-Dropdown-Create-Offer'), 30)
+WebUI.click(findTestObject('Main-Menu-Offer-Dropdown-Create-Offer'))
 
-// plugin value
-WebUI.waitForElementPresent(findTestObject('Create_Offer_Step_1/City_Dropdown'), 30)
-WebUI.waitForElementClickable(findTestObject('Create_Offer_Step_1/City_Dropdown'), 30)
-WebUI.setText(findTestObject('Create_Offer_Step_1/City_Dropdown'),'Hintertupfingen')
+// Select city from plugin dropdown.
+WebUI.waitForElementPresent(findTestObject('Create_Offer_Step_1/City-Dropdown'), 30)
+WebUI.waitForElementClickable(findTestObject('Create_Offer_Step_1/City-Dropdown'), 30)
+WebUI.setText(findTestObject('Create_Offer_Step_1/City-Dropdown'),'Hintertupfingen')
+WebUI.waitForElementPresent(findTestObject('Create_Offer_Step_1/City-Dropdown-Suggestion'), 30)
+WebUI.waitForElementClickable(findTestObject('Create_Offer_Step_1/City-Dropdown-Suggestion'), 30)
+WebUI.click(findTestObject('Create_Offer_Step_1/City-Dropdown-Suggestion'))
 
-//WebUI.waitForElementPresent(findTestObject('Create_Offer_Step_1/City_Dropdown_Suggestion'), 30)
-//WebUI.waitForElementClickable(findTestObject('Create_Offer_Step_1/City_Dropdown_Suggestion'), 30)
-WebUI.click(findTestObject('Create_Offer_Step_1/City_Dropdown_Suggestion'))
+// Select category from dropdown.
+WebUI.waitForElementPresent(findTestObject('Create_Offer_Step_1/Category-Dropdown'), 30)
+WebUI.waitForElementClickable(findTestObject('Create_Offer_Step_1/Category-Dropdown'), 30)
+WebUI.selectOptionByLabel(findTestObject('Create_Offer_Step_1/Category-Dropdown'), /.*Flatshares.*/, true)
 
-WebUI.waitForElementPresent(findTestObject('Create_Offer_Step_1/Category_Dropdown'), 30)
-WebUI.waitForElementClickable(findTestObject('Create_Offer_Step_1/Category_Dropdown'), 30)
-WebUI.selectOptionByLabel(findTestObject('Create_Offer_Step_1/Category_Dropdown'),'Flatshares', true)
+// Select Rent type from dropdown.
+WebUI.waitForElementPresent(findTestObject('Create_Offer_Step_1/Rent-Type-Dropdown'), 30)
+WebUI.waitForElementClickable(findTestObject('Create_Offer_Step_1/Rent-Type-Dropdown'), 30)
+WebUI.selectOptionByLabel(findTestObject('Create_Offer_Step_1/Rent-Type-Dropdown'), /.*Long Term.*/, true)
 
-WebUI.waitForElementPresent(findTestObject('Create_Offer_Step_1/Rent_Type_Dropdown'), 30)
-WebUI.waitForElementClickable(findTestObject('Create_Offer_Step_1/Rent_Type_Dropdown'), 30)
-WebUI.selectOptionByLabel(findTestObject('Create_Offer_Step_1/Rent_Type_Dropdown'),'Long Term', true)
+// Submit the first form
+WebUI.waitForElementPresent(findTestObject('Create_Offer_Step_1/Form-Submit'), 30)
+WebUI.waitForElementVisible(findTestObject('Create_Offer_Step_1/Form-Submit'), 30)
+WebUI.waitForElementClickable(findTestObject('Create_Offer_Step_1/Form-Submit'), 30)
+WebUI.click(findTestObject('Create_Offer_Step_1/Form-Submit'))
 
 
 WebUI.delay(10)
