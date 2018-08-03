@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>City_Dropdown</name>
+   <name>City-Dropdown-Suggestion</name>
    <tag></tag>
-   <elementGuidId>83cbab0a-5e0a-41ed-8b42-104f5d1e6ed9</elementGuidId>
+   <elementGuidId>7d643bf2-df97-4483-aeef-96f65d70338c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>/html/body/div[7]/div[2]/strong</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;autocompinp&quot;]</value>
+      <value>/html/body/div[7]/div[2]/strong</value>
    </webElementProperties>
 </WebElementEntity>

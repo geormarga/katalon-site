@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>City_Dropdown_Suggestion</name>
+   <name>Students-Only</name>
    <tag></tag>
-   <elementGuidId>7d643bf2-df97-4483-aeef-96f65d70338c</elementGuidId>
+   <elementGuidId>c35e5896-2c49-440d-895d-d9e02929603f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>( //*[@class='autocomplete-suggestion'])[1]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>( //*[@class='autocomplete-suggestion'])[1]</value>
+      <value>//*[@id=&quot;wg_art[1]&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

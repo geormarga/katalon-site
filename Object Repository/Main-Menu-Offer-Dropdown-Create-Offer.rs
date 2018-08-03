@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Main-Menu-Offer-Dropdown-Create-Offer</name>
+   <tag></tag>
+   <elementGuidId>3c072943-47a2-4fe0-87ec-5816b52901f6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;top_nav_main_menu&quot;]/ul/li[1]/ul/li[9]/a</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Modal_login_passwordfield</name>
+   <name>Modal-Login-Email-Username</name>
    <tag></tag>
-   <elementGuidId>ef334567-76d4-4e13-91bf-22cf5ff8a9d9</elementGuidId>
+   <elementGuidId>765f51ff-e3e7-42c8-9fee-581ea8d102b3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'login_password' and @type = 'password' and @name = 'login_password' and @placeholder = 'Password']</value>
+         <value>//input[@id = 'login_email_username' and @type = 'email' and @name = 'login_email_username' and @placeholder = 'Email Address']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;login_password&quot;]</value>
+      <value>//*[@id=&quot;delete_login_email_username&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Modal_login_email_username</name>
+   <name>Room-Size</name>
    <tag></tag>
-   <elementGuidId>765f51ff-e3e7-42c8-9fee-581ea8d102b3</elementGuidId>
+   <elementGuidId>c9064927-e2ad-4f12-ba7c-737423fe9b19</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'login_email_username' and @type = 'email' and @name = 'login_email_username' and @placeholder = 'Email Address']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;delete_login_email_username&quot;]</value>
+      <value>//*[@id=&quot;groesse&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Main_Menu_Offer_Dropdown</name>
+   <name>Postal-Code</name>
    <tag></tag>
-   <elementGuidId>b08e1805-2b25-4cf0-aa6f-6ab9e1ef595b</elementGuidId>
+   <elementGuidId>7e16450b-0d6d-4a4a-82f0-d8c5e7a1bf99</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;top_nav_main_menu&quot;]/ul/li[1]</value>
+      <value>//*[@id=&quot;object_plz&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

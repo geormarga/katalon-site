@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Main_Menu_Offer_Dropdown_Create_Offer</name>
+   <name>Form-Submit</name>
    <tag></tag>
-   <elementGuidId>3c072943-47a2-4fe0-87ec-5816b52901f6</elementGuidId>
+   <elementGuidId>13f218d7-1710-4e68-a801-3069e6cd7e4c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;top_nav_main_menu&quot;]/ul/li[1]/ul/li[9]/a</value>
+      <value>//*[@id=&quot;step_one_submit&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Rent_Type_Dropdown</name>
+   <name>Rent-Type-Dropdown</name>
    <tag></tag>
    <elementGuidId>3ccbcfed-f9d2-465a-9901-f99ab7c0e565</elementGuidId>
    <selectorCollection>
